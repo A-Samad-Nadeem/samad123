@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+@font-face{
+    src: url(./assests/fonts/Roboto-Medium.ttf);
+    font-family:roboto-lit;
+}
+@font-face{
+    src: url(./assests/fonts/Roboto-bold.ttf);
+    font-family:roboto-bold;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    position: absolute;left: 70px;top: 40px;
+}
+.navigations{
+    display: flex;
+    flex-direction: row;
+    position: absolute;left: 683px;top: 40px; 
+    gap: 40px; 
+}
+.navigations a{
+    color: #000;
+    font-family: roboto-lit;
+}
+.start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 150px;
+    height: 40px;
+    background: linear-gradient(90deg, #E65C00 0%, #F9D423 100%);
+    border-radius: 30px;
+    position: absolute;right: 10px;top: 30px;
+    
+    
+}
+.start a{
+    color: #fff;
+    font-family:  roboto-lit;
+}
+.mainimg{
+    position: absolute;left: 760px;top: 153px;
+}
+.mainimg img{
+    width: 500px;
+    height: 500px;
+}
+.textarea{
+    position: absolute;top: 160px;left: 70px;
+    width: 600px;
+    height: 183px;
+    color: #37383C;
+    font-family: roboto-bold;
+    font-size: x-large;
+    line-height: 50px;
+}
+.textarea p{
+    position: absolute;top: 210px;left: 5px;
+    width: 555px;
+    height: 24px;
+    color: #696C73;;
+    font-family: roboto-bold;
+    font-size: large;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;top: 500px;left: 80px;
+    background:linear-gradient(90deg, #00D2FF 0%, #3A7BD5 100%);
+    border-radius: 40px;
+    color: #fff;
+    font-family: roboto-lit;
+    width: 200px;
+    height: 50px;
+    border: 1px solid;
+    border-color: linear-gradient(90deg, #00D2FF 0%, #3A7BD5 100%);     
+}
+.icon{
+    width: 30px;
+    position: absolute;right: 1px;
+    display: none;
+}
+@media  screen and (max-width:1024px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .start{
+        position: absolute;left: 1100px;
+    }
+    .textarea{
+        width: 300px;
+        height: 90px;
+        font-size: large;
+    }
+    .textarea p{
+        width: 500px;
+        height: 190px;
+        font-size: small;
+        position: absolute;top: 260px;
+        
+    }
+    .mainimg img{
+        width:350px;
+        height: 400px;
+        position: absolute;right:10px;top: 50px;
+
+    }
+    .navigations{
+        position: absolute;left: 380px;top: 40px; 
+    }
+    .start{
+        position: absolute;left: 800px;top: 30px; 
+    }
+    button{
+        position: absolute;top: 550px;left: 65px;
+    }
+}
+@media  screen and (max-width:768px){
+    .navigations{
+        position: absolute;left: 300px;top: 40px; 
+        gap: 20px;
+    }
+    .start{
+        position: absolute;left: 630px;top: 30px; 
+        width: 120px;
+    }
+    button{
+        position: absolute;top: 930px;
+    }
+    .mainimg img{
+        position: absolute;right:350px;top: 365px;
+
+    }
+}
+@media  screen and (max-width:320px){
+    .navigations{
+        position: absolute;left: 300px;top: 40px; 
+        gap: 20px;
+    }
+    .start{
+        position: absolute;left: 630px;top: 30px; 
+        width: 120px;
+    }
+    button{
+        position: absolute;top: 930px;left: 250px;
+    }
+    .mainimg img{
+        position: absolute;right:210px;top: 365px;
+
+    }
+    .textarea{
+        position: absolute;left:150px;
+    }
+    .textarea h1{
+        position: absolute;left:100px;
+    }
+    .navigations{
+        display: none;
+    }
+    .start{
+        position: absolute;left: 430px;
+    }
+    .icon{
+        position: absolute;left: 600px;top: 40px;
+        display: block;
+    }
+}
+    
+
